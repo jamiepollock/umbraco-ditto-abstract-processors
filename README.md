@@ -34,7 +34,7 @@ Also included: ArchetypeModel processor and other processors which are simply fo
 
 ### How the processors works
 
-Add AbstractIPublishedContentMetaDataAttribute to you concrete class, ensure it has the correct type. In the future this should probably be inferred from the type rather than an attribute property.
+Add AbstractIPublishedContentMetaDataAttribute to you concrete class, ensure it has the correct type which is assignable or implements the original property type.
 
 Add AbstractIPublishedContent to your POCO which will be on an abstract type or interface. Alternatively using AbstractIPublishedContentCollection with a IEnumerable<T> property for mapping a collection of IEnumerable<IPublishedContent>.
 
