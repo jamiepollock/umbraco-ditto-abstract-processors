@@ -1,3 +1,7 @@
+# NOTE: Reundundant
+
+This functionality is covered in v0.10 of Ditto with the use of DittoFactoryAttribute.
+
 # Umbraco Ditto Abstract IPublishedContent processors
 
 This is a proof of concept Umbraco app which attempts to map a concrete class to a potentially abstract class or interface.
