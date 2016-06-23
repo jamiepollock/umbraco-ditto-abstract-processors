@@ -7,17 +7,17 @@ namespace DemoApp.ViewModels
         string Url { get; set; }
     }
 
-    public abstract class HeroBackgroundViewModel
+    public abstract class HeroBackgroundViewModel : IHero
     {
         public string Url { get; set; }
     }
 
-    [AbstractIPublishedContentMetaData(typeof(HeroBackgroundViewModel), "Image")]
-    public class ImageHeroBackgroundViewModel : HeroBackgroundViewModel, IHero
+    [AbstractIPublishedContentMetaData("Image")]
+    public class ImageHeroBackgroundViewModel : HeroBackgroundViewModel
     {
     }
 
-    [AbstractIPublishedContentMetaData(typeof(HeroBackgroundViewModel), "Video")]
+    [AbstractIPublishedContentMetaData("Video")]
     public class VideoHeroBackgroundViewModel : HeroBackgroundViewModel
     {
 
