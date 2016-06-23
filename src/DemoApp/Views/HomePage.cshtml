@@ -1,0 +1,22 @@
+﻿@model DemoApp.ViewModels.HomePageViewModel
+@{
+	Layout = "Master.cshtml";
+}
+
+@if (Model.Heroes != null)
+{
+    <ol >
+        @foreach (var hero in Model.Heroes)
+        {
+            <li class="hero-item hero-item--@hero.ContentPosition">
+                @*@Html.DisplayFor(model => hero.Background)*@
+
+                @if (hero.Background != null)
+                {
+                    @hero.Background.GetType()
+                }
+                <h1>@hero.Text</h1>
+            </li>
+        }
+    </ol>
+}
