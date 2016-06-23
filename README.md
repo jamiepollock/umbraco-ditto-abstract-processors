@@ -1,0 +1,1 @@
+umbraco-ditto-abstract-processors
